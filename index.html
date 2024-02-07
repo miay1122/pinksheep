@@ -40,28 +40,28 @@
         </head>
 
 
-        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
    
         <!DOCTYPE html>
         <html lang="en">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Google Model Viewer Example</title>
-          <!-- Include Google Model Viewer script -->
+          <title>Google Model Viewer - Pink Sheep</title>
           <script src="https://modelviewer.dev/shared/model-viewer-base.js"></script>
         </head>
-        <body>
+        <body style="margin: 0; overflow: hidden;">
           <model-viewer 
-            src="pink_sheep.glb"
-            alt="Astronaut model"
-            auto-rotate
+            src="pink_sheep.glb" 
+            alt="A cute pink sheep"
+            style="width: 100%; height: 100vh;"
             camera-controls
-            background-color="#f0f0f0"
-            style="width: 100%; height: 30vh;"
+            auto-rotate
+            background-color="#f8f8f8"
+            shadow-intensity="1"
           ></model-viewer>
         </body>
         </html>
+        
         
         
 
