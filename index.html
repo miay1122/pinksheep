@@ -35,12 +35,28 @@
         <p>This is Mia's pink sheep!</p>
         <img src="https://via.placeholder.com/400" alt="Placeholder Image">
     </section>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pink Sheep Model Viewer</title>
+      <script src="https://modelviewer.dev/shared/model-viewer-base.js"></script>
+    </head>
+    <body>
+      <model-viewer 
+        src="path/to/pinksheep.glb" 
+        alt="Pink Sheep 3D Model" 
+        auto-rotate
+        camera-controls
+        background-color="#f0f0f0"
+        style="width: 100%; height: 500px;">
+      </model-viewer>
+    </body>
+    </html>
+    
 
-<!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-
-<!-- Use it like any other HTML element -->
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="pinksheep" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+    
 </body>
 </html>
 
