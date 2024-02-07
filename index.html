@@ -46,30 +46,20 @@
         <!DOCTYPE html>
         <html lang="en">
         <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Model Viewer Example</title>
-        <script src="https://modelviewer.dev/shared/model-viewer/model-viewer.min.js"></script>
-        <style>
-          #model-viewer-container {
-            width: 50%;
-            height: 500px;
-          }
-        </style>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Pink Sheep Model</title>
+          <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
         </head>
         <body>
-        <div id="model-viewer-container">
           <model-viewer src="pink_sheep.glb"
-                        alt="A 3D model of a pink sheep"
+                        alt="Pink Sheep"
                         auto-rotate
                         camera-controls
                         ar
-                        ar-modes="webxr scene-viewer quick-look"
-                        ios-src="path/to/pinksheep.usdz">
-            <!-- Fallback content goes here -->
-   
-          </model-viewer>
-        </div>
+                        ar-modes="webxr quick-look"
+                        ios-src="pinksheep.usdz"
+                        style="width: 100%; height: 100vh;"></model-viewer>
         </body>
         </html>
         
