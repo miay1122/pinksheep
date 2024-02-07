@@ -38,10 +38,9 @@
  
 
         </head>
-    <body>
+
 
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-
 
         <!DOCTYPE html>
         <html lang="en">
@@ -49,22 +48,17 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Google Model Viewer</title>
-          <script src="https://modelviewer.dev/shared-assets/webcomponents-lite.js"></script>
-          <script src="https://modelviewer.dev/model-viewer/model-viewer.js"></script>
-          <style>
-            model-viewer {
-              width: 100%;
-              height: 30vh;
-            }
-          </style>
+          <!-- Include Google Model Viewer script -->
+          <script src="https://modelviewer.dev/shared/model-viewer-base.js"></script>
         </head>
-        <body>
-          <model-viewer src="pink_sheep.glb" alt="Pink Sheep Model" autoplay camera-controls></model-viewer>
-        </body>
+  
+          <model-viewer src="pink_sheep.glb" alt="A pink sheep" auto-rotate camera-controls></model-viewer>
+
         </html>
         
         
-    </body>
+        
+
     </html>
     
 
