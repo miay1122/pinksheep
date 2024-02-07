@@ -48,18 +48,18 @@
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Pink Sheep Model</title>
-          <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+          <title>Google Model Viewer</title>
+          <script src="https://modelviewer.dev/shared-assets/webcomponents-lite.js"></script>
+          <script src="https://modelviewer.dev/model-viewer/model-viewer.js"></script>
+          <style>
+            model-viewer {
+              width: 50%;
+              height: 50vh;
+            }
+          </style>
         </head>
         <body>
-          <model-viewer src="pink_sheep.glb"
-                        alt="Pink Sheep"
-                        auto-rotate
-                        camera-controls
-                        ar
-                        ar-modes="webxr quick-look"
-                        ios-src="pinksheep.usdz"
-                        style="width: 50%; height: 100vh;"></model-viewer>
+          <model-viewer src="pink_sheep.glb" alt="Pink Sheep Model" autoplay camera-controls></model-viewer>
         </body>
         </html>
         
