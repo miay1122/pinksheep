@@ -42,24 +42,18 @@
 
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Google Model Viewer Example</title>
-          <script src="https://modelviewer.dev/shared/model-viewer/model-viewer.js"></script>
-        </head>
-
-          <model-viewer 
-            src="pink_sheep.glb" 
-            alt="A 3D model of a pink sheep"
-            auto-rotate
-            camera-controls
-            style="width: 800px; height: 600px;">
-          </model-viewer>
-
-        </html>
+        <model-viewer src="pink_sheep.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div>
+        </model-viewer>
+        
         
     </body>
     </html>
