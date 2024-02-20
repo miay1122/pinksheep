@@ -1,74 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #dbf7d1;
-        }
-        header {
-            background-color: #333;
-            color: #fde4f0;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>3D Model Viewer</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Mia's zoo!</h1>
-    </header>
-    <section>
-        <p>This is Mia's pink sheep!</p>
+    <div class="container">
+        <model-viewer src="pink_sheep.glb" ar camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+      
+            <div id="ar-prompt">
+            </div>
+        </model-viewer>
         
-    </section>
- 
-
-        </head>
-
-        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-   
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Google Model Viewer - Pink Sheep</title>
-          <script src="https://modelviewer.dev/shared/model-viewer-base.js"></script>
-        </head>
-        <body style="margin: 0; overflow: hidden;">
-          <model-viewer 
-            src="pink_sheep.glb" 
-            alt="A cute pink sheep"
-            style="width: 50%; height: 50vh;"
-            camera-controls
-            auto-rotate
-            background-color="#f8f8f8"
-            shadow-intensity="1"
-          ></model-viewer>
-        </body>
-        </html>
-        
-        
-        
-
-    </html>
+    </div>
     
 
-    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </body>
-</html>
 
+</html>
